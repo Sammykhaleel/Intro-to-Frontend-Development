@@ -36,17 +36,16 @@
 		<a href="mailto:sammykhaleel83@gmail.com">Contact me</a>
 	</div>
 
-	<form action="" method="post">
-		<label>E-mail: </label>
-		<input type="email">
+	<form action="" method="post" id="contact-form">
+	  <label class="standard-label">Email: </label>
+	  <input type="email" required>
 
-		<label>Telephone: </label>
-		<input type="tel">
+	  <label class="standard-label">Telephone: </label>
+	  <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
-		<label>Message: </label>
-		<textarea></textarea>
-
-		<input type="submit" value="Send message">
+	  <label class="standard-label">Message: </label>
+	  <textarea required maxlength="240"></textarea>
+	  <input type="submit" value="Send message">
 	</form>
 
 
